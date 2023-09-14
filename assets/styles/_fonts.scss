@@ -5,8 +5,14 @@
     font-family: "Inter", sans-serif;
     font-weight: $weight;
     color: $grey-dark;
+    ::selection {
+        background-color: $green;
+    }
     @media screen and (prefers-color-scheme: dark) {
         color: #f0f0f0;
+        ::selection {
+            background-color: $green-dark;
+        }
     }
 }
 

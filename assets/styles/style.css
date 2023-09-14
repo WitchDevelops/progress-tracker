@@ -109,9 +109,15 @@ meter {
   max-width: 992px;
   margin: auto;
 }
+.page__body ::selection {
+  background-color: #42d392;
+}
 @media screen and (prefers-color-scheme: dark) {
   .page__body {
     color: #f0f0f0;
+  }
+  .page__body ::selection {
+    background-color: #41b883;
   }
 }
 @media screen and (prefers-color-scheme: dark) {
@@ -133,9 +139,15 @@ meter {
   line-height: 1.2;
   color: #213547;
 }
+.title ::selection {
+  background-color: #42d392;
+}
 @media screen and (prefers-color-scheme: dark) {
   .title {
     color: #f0f0f0;
+  }
+  .title ::selection {
+    background-color: #41b883;
   }
 }
 .title .gradient {
@@ -152,9 +164,15 @@ meter {
   color: rgba(60, 60, 60, 0.7019607843);
   font-size: clamp(1rem, 0.8571rem + 0.7143vw, 1.4rem);
 }
+.text ::selection {
+  background-color: #42d392;
+}
 @media screen and (prefers-color-scheme: dark) {
   .text {
     color: #f0f0f0;
+  }
+  .text ::selection {
+    background-color: #41b883;
   }
 }
 
@@ -165,9 +183,15 @@ meter {
   font-size: clamp(2rem, 1.7679rem + 1.1607vw, 2.8125rem);
   color: #213547;
 }
+.section__title ::selection {
+  background-color: #42d392;
+}
 @media screen and (prefers-color-scheme: dark) {
   .section__title {
     color: #f0f0f0;
+  }
+  .section__title ::selection {
+    background-color: #41b883;
   }
 }
 
@@ -181,9 +205,15 @@ meter {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.course__title ::selection {
+  background-color: #42d392;
+}
 @media screen and (prefers-color-scheme: dark) {
   .course__title {
     color: #f0f0f0;
+  }
+  .course__title ::selection {
+    background-color: #41b883;
   }
 }
 
@@ -251,7 +281,7 @@ meter {
   border-radius: 8px;
 }
 .progress__bar {
-  width: 1%;
+  width: 0%;
   height: 35px;
   background-color: #34495e;
   text-align: center;
