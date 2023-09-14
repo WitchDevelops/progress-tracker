@@ -4,8 +4,13 @@ It's a personal project to track progress in many courses I'm taking. Build for 
 # What it does
 At the moment it does nothing.
 But it will let you input the progress (in %) and save it, to have an overview of all the courses. No idea how to achieve it.
+It's like Goodreads (books) or GG (games), but for learning (courses, tutorials, textbooks).
+
+# Live
+https://witchdevelops.github.io/progress-tracker/
 
 # What needs to be done
+Basically everything, lol.
 ## urgent
 Add the core functionality (how? `<form>` and `<input type="progress"`? Then what, connect it to a database of sorts to save it? Or store it in browser cache? No idea, I'll figure it out somehow.)
 ## later
