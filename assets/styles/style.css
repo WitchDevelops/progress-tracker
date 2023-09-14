@@ -262,8 +262,8 @@ meter {
 }
 @media screen and (prefers-color-scheme: dark) {
   .section__course {
-    -webkit-box-shadow: 8px 8px 16px -13px rgb(66, 68, 90);
-    -moz-box-shadow: 8px 8px 16px -13px rgb(66, 68, 90);
+    -webkit-box-shadow: 8px 8px 16px -13px rgb(117, 120, 163);
+    -moz-box-shadow: 8px 8px 16px -13px rgb(117, 120, 163);
     box-shadow: 8px 8px 16px -13px rgb(117, 120, 163);
   }
 }
