@@ -16,4 +16,13 @@
         color: white;
         border-radius: 8px;
     }
+
+    @media screen and (prefers-color-scheme: dark) {
+        &__bg {
+            background-color: $indigo;
+        }
+        &__bar {
+            background-color: $blue;
+        }
+    }
 }

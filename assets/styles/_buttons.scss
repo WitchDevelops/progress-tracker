@@ -10,5 +10,11 @@
             cursor: pointer;
             background-color: $green-dark;
         }
+        @media screen and (prefers-color-scheme: dark) {
+            background-color: $green-dark;
+            &:hover {
+                background-color: $green;
+            }
+        }
     }
 }
