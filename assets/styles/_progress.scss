@@ -1,0 +1,19 @@
+@import "variables";
+
+.progress {
+    &__bg {
+        width: 50%;
+        background-color: #ddd;
+        border-radius: 8px;
+    }
+
+    &__bar {
+        width: 1%;
+        height: 35px;
+        background-color: $blue-dark;
+        text-align: center;
+        line-height: 32px;
+        color: white;
+        border-radius: 8px;
+    }
+}

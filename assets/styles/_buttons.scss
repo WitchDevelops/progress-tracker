@@ -1,0 +1,14 @@
+@import "variables";
+
+.button {
+    &--main {
+        background-color: $green;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        &:hover {
+            cursor: pointer;
+            background-color: $green-dark;
+        }
+    }
+}

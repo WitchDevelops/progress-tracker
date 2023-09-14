@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "variables";
+
+
+@mixin text($weight) {
+    font-family: 'Inter', sans-serif;
+    font-weight: $weight;
+    color: $grey-dark;
+}
+
+@mixin fs--medium {
+    font-size: clamp(1rem, 0.8571rem + 0.7143vw, 1.4rem);
+}
+
+@mixin gradient {
+    background: -webkit-linear-gradient(315deg, $green 25%, $blue);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.page {
+    &__body {
+        @include text(300);
+        font-size: 100%;
+        max-width: 992px;
+        margin: auto;
+    }
+}
+
+.header {
+    text-align: center;
+    text-wrap: balance;
+}
+.title {
+    @include text(900);
+        font-size: clamp(2.8125rem, 2.0089rem + 4.0179vw, 5.625rem);
+        line-height: 1.2;
+        color: $indigo;
+        .gradient {
+            @include gradient;
+            display: block;
+        }
+}
+
+.text {
+    @include text(300);
+    @include fs--medium();
+}
+
+.section {
+    &__title {
+        @include text(900);
+        font-size: clamp(2rem, 1.7679rem + 1.1607vw, 2.8125rem);
+        color: $indigo;
+    }
+}
+
+.course {
+    &__title {
+        @include text(900);
+        @include fs--medium();
+        @include gradient();
+    }   
+}
+
+.link {
+    color: $blue-dark;
+    &:hover {
+        color: $blue;
+    }
+}
