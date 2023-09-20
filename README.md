@@ -17,6 +17,7 @@ Add the core functionality (how? `<form>` and `<input type="progress"`? Then wha
 Refactor the code to allow adding new courses from the UI. For this I guess I'll need a database... and probably user account so that the others won't mess with your stuff
 
 # Sofware requirements
+Software requirements document can be found [here](https://www.craft.me/s/JRZluxKSODazXO)
 1. Web app
 2. Login
 3. Manually adding a resource: input fields for the title, type (course/tutorial/book/article/other), link (optional)
