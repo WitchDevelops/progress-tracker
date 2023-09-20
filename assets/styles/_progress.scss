@@ -8,12 +8,21 @@
     }
 
     &__bar {
-        width: 1%;
+        width: 0%;
         height: 35px;
         background-color: $blue-dark;
         text-align: center;
         line-height: 32px;
         color: white;
         border-radius: 8px;
+    }
+
+    @media screen and (prefers-color-scheme: dark) {
+        &__bg {
+            background-color: $indigo;
+        }
+        &__bar {
+            background-color: $blue;
+        }
     }
 }

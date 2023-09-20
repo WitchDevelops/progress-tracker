@@ -56,8 +56,7 @@ textarea {
 /* minimum style to allow to style meter element */
 meter {
   -webkit-appearance: revert;
-  -moz-appearance: revert;
-       appearance: revert;
+  appearance: revert;
 }
 
 /* preformatted text - use only for this feature */
@@ -66,9 +65,6 @@ meter {
 }
 
 /* reset default text opacity of input placeholder */
-::-moz-placeholder {
-  color: unset;
-}
 ::placeholder {
   color: unset;
 }
@@ -113,6 +109,22 @@ meter {
   max-width: 992px;
   margin: auto;
 }
+.page__body ::selection {
+  background-color: #42d392;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .page__body {
+    color: #f0f0f0;
+  }
+  .page__body ::selection {
+    background-color: #41b883;
+  }
+}
+@media screen and (prefers-color-scheme: dark) {
+  .page__body {
+    background-color: #151f29;
+  }
+}
 
 .header {
   text-align: center;
@@ -126,6 +138,17 @@ meter {
   font-size: clamp(2.8125rem, 2.0089rem + 4.0179vw, 5.625rem);
   line-height: 1.2;
   color: #213547;
+}
+.title ::selection {
+  background-color: #42d392;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .title {
+    color: #f0f0f0;
+  }
+  .title ::selection {
+    background-color: #41b883;
+  }
 }
 .title .gradient {
   background: -webkit-linear-gradient(315deg, #42d392 25%, #647eff);
@@ -141,6 +164,17 @@ meter {
   color: rgba(60, 60, 60, 0.7019607843);
   font-size: clamp(1rem, 0.8571rem + 0.7143vw, 1.4rem);
 }
+.text ::selection {
+  background-color: #42d392;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .text {
+    color: #f0f0f0;
+  }
+  .text ::selection {
+    background-color: #41b883;
+  }
+}
 
 .section__title {
   font-family: "Inter", sans-serif;
@@ -148,6 +182,17 @@ meter {
   color: rgba(60, 60, 60, 0.7019607843);
   font-size: clamp(2rem, 1.7679rem + 1.1607vw, 2.8125rem);
   color: #213547;
+}
+.section__title ::selection {
+  background-color: #42d392;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .section__title {
+    color: #f0f0f0;
+  }
+  .section__title ::selection {
+    background-color: #41b883;
+  }
 }
 
 .course__title {
@@ -160,12 +205,31 @@ meter {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.course__title ::selection {
+  background-color: #42d392;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .course__title {
+    color: #f0f0f0;
+  }
+  .course__title ::selection {
+    background-color: #41b883;
+  }
+}
 
 .link {
-  color: #34495E;
+  color: #34495e;
 }
 .link:hover {
   color: #647eff;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .link {
+    color: #647eff;
+  }
+  .link:hover {
+    color: #41b883;
+  }
 }
 
 .header {
@@ -192,7 +256,16 @@ meter {
   flex-direction: column;
   gap: 0.5rem;
   flex-basis: 50%;
+  -webkit-box-shadow: 8px 8px 16px -13px rgb(66, 68, 90);
+  -moz-box-shadow: 8px 8px 16px -13px rgb(66, 68, 90);
   box-shadow: 8px 8px 16px -13px rgb(66, 68, 90);
+}
+@media screen and (prefers-color-scheme: dark) {
+  .section__course {
+    -webkit-box-shadow: 8px 8px 16px -13px rgb(117, 120, 163);
+    -moz-box-shadow: 8px 8px 16px -13px rgb(117, 120, 163);
+    box-shadow: 8px 8px 16px -13px rgb(117, 120, 163);
+  }
 }
 
 .course__progress {
@@ -208,13 +281,21 @@ meter {
   border-radius: 8px;
 }
 .progress__bar {
-  width: 1%;
+  width: 0%;
   height: 35px;
-  background-color: #34495E;
+  background-color: #34495e;
   text-align: center;
   line-height: 32px;
   color: white;
   border-radius: 8px;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .progress__bg {
+    background-color: #213547;
+  }
+  .progress__bar {
+    background-color: #647eff;
+  }
 }
 
 .button--main {
@@ -225,5 +306,15 @@ meter {
 }
 .button--main:hover {
   cursor: pointer;
-  background-color: #41B883;
-}/*# sourceMappingURL=style.css.map */
+  background-color: #41b883;
+}
+@media screen and (prefers-color-scheme: dark) {
+  .button--main {
+    background-color: #41b883;
+  }
+  .button--main:hover {
+    background-color: #42d392;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
